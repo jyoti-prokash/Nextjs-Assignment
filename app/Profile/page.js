@@ -15,8 +15,7 @@ const Profile = async () => {
     return (
       <div className="m-10 border-2 border-blue-600 p-10">
         <h2 className="text-center font-bold text-2xl">
-          Welcome to your profile, {user?.given_name || "Guest"}{" "}
-          {user?.family_name || ""}
+          Welcome to your profile, {user?.given_name || "Guest"} {user?.family_name || ""}
         </h2>
         <p className="text-center font-bold my-3">
           Email: {user?.email || "Not available"}
@@ -32,7 +31,9 @@ const Profile = async () => {
         <h2 className="text-center font-bold text-2xl text-red-600">
           Failed to load profile information
         </h2>
-        <p className="text-center font-bold my-3">Please try again later.</p>
+        <p className="text-center font-bold my-3">
+          Please try again later.
+        </p>
       </div>
     );
   }
