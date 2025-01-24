@@ -1,8 +1,14 @@
+import React from 'react';
+import FeaturePost from './Components/FeaturePost';
 
-export default function Home() {
+const Home = async() => {
   return (
     <div>
-      <h2 className="text-3xl">hello world</h2>
+        <section className='container mx-auto mt-20'>
+          <FeaturePost></FeaturePost>
+        </section>
     </div>
   );
-}
+};
+
+export default Home;

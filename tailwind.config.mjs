@@ -5,7 +5,7 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: { 
+  theme: {
     extend: {
       colors: {
         background: "var(--background)",
@@ -14,4 +14,7 @@ export default {
     },
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light"],
+  },
 };
